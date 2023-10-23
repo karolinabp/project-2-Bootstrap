@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Diana Karolina Burgos Parra" />
+		<meta name="viewport" content="width,initial-scale=1.0" /> 
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <title>Project 2: bootstrap - Contact</title>
+
+	</head>
+
+    <body class="bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="home.html">
+                <img src="images/logo.png" alt="company logo" width="160" height="60">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="about.html" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            About us
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <a class="dropdown-item" href="about.html">History</a>
+                            <a class="dropdown-item" href="about.html#about-team">Team</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="store.html">Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Photo Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    
+        <hr>
+    
+        <section class="container main-content">
+            <h2 class="text-center">Contact us!</h2>
+        
+            <form action="http://vip.groupehn.com:20003/html/infospost.php" method="POST">
+                <fieldset class="border p-4">
+                    <legend class="mb-0">Contact details</legend>
+        
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="lastname">Last Name</label>
+                                <input type="text" class="form-control" id="lastname" name="lastname" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="firstname">First Name</label>
+                                <input type="text" class="form-control" id="firstname" name="firstname" required>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="mb-2">
+                        <label for="mail">Email</label>
+                        <input type="email" class="form-control" id="mail" name="mail" placeholder="yourmail@yahoo.com" required>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <label for="request">Share your questions or comments with us.</label>
+                            <textarea class="form-control" id="request" name="request" required rows="6"></textarea>
+                        </div>
+            
+                        <div class="col">
+                            <label for="country">Country</label>
+                            <select class="form-control" id="country" name="country">
+                                <option>Spain</option>
+                                <option>Portugal</option>
+                                <option>France</option>
+                                <option>Germany</option>
+                                <option>Italy</option>
+                                <option>Ireland</option>
+                            </select>
+                        </div>
+
+                    </div>
+        
+                    
+                </fieldset>
+        
+                <div class="text-center my-4">
+                    <button type="reset" class="btn btn-secondary">RESET</button>
+                    <button type="submit" class="btn btn-primary">SUBMIT</button>
+                </div>
+            </form>
+        </section>
+
+        <p class="text-center small">Phone: +34 600600600 | Address: 123 Main Street | LinkedIn: DelicakeStore | Twitter: @delicakestore</p>
+    
+        <hr>
+    </body>
+	
+</html> 
